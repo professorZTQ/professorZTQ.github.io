@@ -2,6 +2,10 @@ body {
     margin: 60px auto;
     width: 70%;
 }
+#line{
+    font-size: 1em;
+    text-indent: 2em;
+}
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
@@ -42,6 +46,7 @@ ul.posts li {
     list-style: none;
 }
 form {
+    color:#999;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
