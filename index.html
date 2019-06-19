@@ -2,7 +2,35 @@
 <html>
     <head>
         <title>zhutianqi,student in njupt</title>
-        <link rel="stylesheet" type="text/css" href="/css/main.css">    
+        <link rel="stylesheet" type="text/css" href="/css/main.css">  
+        <script type="text/javascript">  
+    var winheight,winsize,x,win2;  
+    function go1()  
+    {  
+        winheight = 100;  
+        winsize = 100;  
+        x = 5;  
+        win2 = window.open("new.html","","scrollbars='no'");  
+        win2.moveTo(0.0);  
+        win2.resizeTo(100,100);  
+        go2();  
+    }  
+    function go2()  
+    {  
+        if (winheight>=screen.avaiHeight-3)   
+        {  
+            x=0;  
+        }  
+        win2.resizeBy(5,x);  
+        winheight+=x;  
+        winsize+=5;  
+        if(winsize>=screen.width-5)  
+        {  
+            return;  
+        }  
+        setTimeout("go2()",50);  
+    }  
+    </script>          
     </head>
     <body>
         <nav>
@@ -26,6 +54,7 @@
                 </td>
             </tr>
         </table> 
+<a href="javascript:go1()">打开</a>
         <p id="line">  </p>
         <p id="line">  </p>        
         <footer>
