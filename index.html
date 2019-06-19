@@ -4,32 +4,18 @@
         <title>zhutianqi,student in njupt</title>
         <link rel="stylesheet" type="text/css" href="/css/main.css">  
         <script type="text/javascript">  
-    var winheight,winsize,x,win2;  
-    function go1()  
+    var position = 0;  
+    function scroller()  
     {  
-        winheight = 100;  
-        winsize = 100;  
-        x = 5;  
-        win2 = window.open("new.html","","scrollbars='no'");  
-        win2.moveTo(0.0);  
-        win2.resizeTo(100,100);  
-        go2();  
-    }  
-    function go2()  
-    {  
-        if (winheight>=screen.avaiHeight-3)   
+        if(true)  
         {  
-            x=0;  
+            position++;  
+            scroll(0,position);  
+            clearTimeout(timer);  
+            var timer = setTimeout("scroller()",10);  
         }  
-        win2.resizeBy(5,x);  
-        winheight+=x;  
-        winsize+=5;  
-        if(winsize>=screen.width-5)  
-        {  
-            return;  
-        }  
-        setTimeout("go2()",50);  
     }  
+    scroller();  
     </script>          
     </head>
     <body>
@@ -54,7 +40,34 @@
                 </td>
             </tr>
         </table> 
-<a href="javascript:go1()">打开</a>
+ <table align="center">
+            <tr>
+                <td>
+                    <img src="屏幕快照2019-06-11上午1.19.58.png">
+                </td>
+            </tr>
+        </table> 
+ <table align="center">
+            <tr>
+                <td>
+                    <img src="屏幕快照2019-06-11上午1.19.58.png">
+                </td>
+            </tr>
+        </table> 
+ <table align="center">
+            <tr>
+                <td>
+                    <img src="屏幕快照2019-06-11上午1.19.58.png">
+                </td>
+            </tr>
+        </table> 
+ <table align="center">
+            <tr>
+                <td>
+                    <img src="屏幕快照2019-06-11上午1.19.58.png">
+                </td>
+            </tr>
+        </table> 
         <p id="line">  </p>
         <p id="line">  </p>        
         <footer>
